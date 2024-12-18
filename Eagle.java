@@ -77,6 +77,7 @@ public class Eagle extends Bird implements Fly {
     @Override
     public void land() {
         if (this.flying && this.altitude <= 1) {
+            this.altitude = 0;
             System.out.printf("%s land on the ground.%n", this.getName());
         } else {
             System.out.printf("%s is too high, it can't land.%n", this.getName());
